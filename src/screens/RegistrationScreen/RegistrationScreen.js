@@ -74,3 +74,5 @@ const RegistrationScreen = ({navigation}) => {
         </View>
     )
 }
+
+export default RegistrationScreen
