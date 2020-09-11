@@ -33,6 +33,24 @@ const LoginScreen = ({navigation}) => {
                     underlineColorAndroid='transparent'
                     autoCapitalize='none'                    
                 />
+                <TextInput
+                    style={styles.input}
+                    placeholder='Password'
+                    placeholderTextColor='#aaaaaa'
+                    secureTextEntry
+                    onChangeText={(text) => setPassword(text)}
+                    value={password}
+                    underlineColorAndroid='transparent'
+                    autoCapitalize='none'                    
+                />
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => onLoginPress()}>
+                    <Text style={styles.buttonTitle}>Log In</Text>
+                </TouchableOpacity>
+                <View style={styles.footerView}>
+                    <Text styles={styles.footerText}>Don't have an account? <Text onPress={onFooterlinkPress} style={styles.footerLink}>Sign up</Text></Text>
+                </View>
             </KeyboardAwareScrollView>
         </View>
     )
