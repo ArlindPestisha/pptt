@@ -26,6 +26,15 @@ const RegistrationScreen = ({navigation}) => {
                 />
                 <TextInput
                     style={styles.input}
+                    placeholder='Full Name'
+                    placeholderTextColor='#aaaaaa'
+                    onChangeText={(text) => setPassword(text)}
+                    value={fullName}
+                    underlineColorAndroid='transparent'
+                    autoCapitalize='none'                    
+                />
+                <TextInput
+                    style={styles.input}
                     placeholder='E-mail'
                     placeholderTextColor='#aaaaaa'
                     onChangeText={(text) => setEmail(text)}
@@ -40,15 +49,6 @@ const RegistrationScreen = ({navigation}) => {
                     secureTextEntry
                     onChangeText={(text) => setPassword(text)}
                     value={password}
-                    underlineColorAndroid='transparent'
-                    autoCapitalize='none'                    
-                />
-                <TextInput
-                    style={styles.input}
-                    placeholder='Full Name'
-                    placeholderTextColor='#aaaaaa'
-                    onChangeText={(text) => setPassword(text)}
-                    value={fullName}
                     underlineColorAndroid='transparent'
                     autoCapitalize='none'                    
                 />
