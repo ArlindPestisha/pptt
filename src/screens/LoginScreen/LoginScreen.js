@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import styles from './styles'
 
 const LoginScreen = ({navigation}) => {
 
