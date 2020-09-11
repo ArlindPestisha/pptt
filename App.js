@@ -19,7 +19,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        //Here I am using the ternary operator ?  : ;
+        {/*Here I am using the ternary operator ?  : ;*/}
         { user ? (
           <Stack.Screen name='Home'>
             {props => <HomeScreen {...props } extraData={user} />}

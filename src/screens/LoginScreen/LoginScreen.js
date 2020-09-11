@@ -10,7 +10,7 @@ const LoginScreen = ({navigation}) => {
     const [password, setPassword] = useState('')
 
     //Function to navigate between screens
-    const onFooterlinkPress = () => {
+    const onFooterLinkPress = () => {
         navigation.navigate('Registration')
     }
 
@@ -50,7 +50,7 @@ const LoginScreen = ({navigation}) => {
                     <Text style={styles.buttonTitle}>Log In</Text>
                 </TouchableOpacity>
                 <View style={styles.footerView}>
-                    <Text styles={styles.footerText}>Don't have an account? <Text onPress={onFooterlinkPress} style={styles.footerLink}>Sign up</Text></Text>
+                    <Text styles={styles.footerText}>Don't have an account? <Text onPress={onFooterLinkPress} style={styles.footerLink}>Sign up</Text></Text>
                 </View>
             </KeyboardAwareScrollView>
         </View>
