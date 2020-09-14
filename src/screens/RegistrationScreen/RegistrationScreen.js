@@ -30,8 +30,8 @@ const RegistrationScreen = ({navigation}) => {
                 email,
                 fullName
             }
-            const userRef = firebase.firestore().collection('users')
-            userRef
+            const usersRef = firebase.firestore().collection('users')
+            usersRef
             .doc(uid)
             .set(data)
             .then(() => {
@@ -59,7 +59,7 @@ const RegistrationScreen = ({navigation}) => {
                     style={styles.input}
                     placeholder='Full Name'
                     placeholderTextColor='#aaaaaa'
-                    onChangeText={(text) => setPassword(text)}
+                    onChangeText={(text) => setFullName(text)}
                     value={fullName}
                     underlineColorAndroid='transparent'
                     autoCapitalize='none'                    
