@@ -1,13 +1,30 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import styles from './styles'
+import { View, Text, TextInput, StyleSheet } from 'react-native'
+
 
 const HomeScreen = (props) => {
     return (
-        <View>
-            <Text>Home Screen</Text>
+        <View style={styles.container}>
+            <TextInput
+                style={{height: 40}}
+                placeholder="From:"
+    
+            />
+            <TextInput
+                style={{height: 40}}
+                placeholder="To:"
+    
+            />
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+})
 
 export default HomeScreen
