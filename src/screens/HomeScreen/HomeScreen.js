@@ -1,30 +1,30 @@
 import React from 'react'
-import { View, Text, TextInput, StyleSheet } from 'react-native'
+import { View, Text, TextInput, ImageBackground,Button } from 'react-native'
+import styles from './styles'
 
 
 const HomeScreen = (props) => {
     return (
-        <View style={styles.container}>
-            <TextInput
-                style={{height: 40}}
-                placeholder="From:"
-    
-            />
-            <TextInput
-                style={{height: 40}}
-                placeholder="To:"
-    
-            />
-        </View>
+        <ImageBackground source={require('../../../assets/background.jpg')} style={styles.container}>
+            
+                <Text style={styles.text}>Let's Find Your new buddy to travel!!</Text>
+                <View style={styles.inputContainer}>
+                    <TextInput
+                        style={styles.input}
+                        placeholder="From:"
+                    />
+                    <TextInput
+                        style={styles.input}
+                        placeholder="To:"
+                    />
+                </View>
+                <Button
+                    title="Serach"
+                    color="red"
+                />
+            
+        </ImageBackground>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-})
 
 export default HomeScreen
