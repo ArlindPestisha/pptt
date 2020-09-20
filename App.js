@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { LoginScreen, HomeScreen, RegistrationScreen} from './src/screens';
+import { LoginScreen, HomeScreen, RegistrationScreen, ProfileScreen } from './src/screens';
 import 'react-native-gesture-handler'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
@@ -49,13 +49,18 @@ const App = () => {
       <Stack.Navigator>
         {/*Here I am using the ternary operator ?  : ;*/}
         { user ? (
-          <Stack.Screen name='Home'>
-            {props => <HomeScreen {...props } extraData={user} />}
-          </Stack.Screen>
+          <>
+            <Stack.Screen name='Home'>
+              {props => <HomeScreen {...props } extraData={user} />}
+            </Stack.Screen>
+            <Stack.Screen name='Profile' component={ProfileScreen} />
+          </>
+          
         ) : (
           <>
             <Stack.Screen name='Login' component={LoginScreen} />
             <Stack.Screen name='Registration' component={RegistrationScreen} />
+            
           </>
         )}
       </Stack.Navigator>
