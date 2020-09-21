@@ -4,6 +4,9 @@ import { Text, View, ScrollView,Image, Button,StyleSheet, FlatList  } from 'reac
 import CardComponent from '../../components/CardComponent'
 import Footer from '../../components/Footer'
 import TextBody from '../../components/TextBody'
+import TheButton from '../../components/TheButton'
+import Line from '../../components/Line'
+
 
 
 const ProfileScreen = () => {
@@ -18,23 +21,39 @@ const ProfileScreen = () => {
                 <View style={styles.cardContainer}>
                     <CardComponent>
                         <Text>Arlind</Text>
-                        <Image source={require('../../../assets/icon.png')} />
-                        <Button title='like' />
+                        <Line />
+                        <Text>Train Number: 1111</Text>
+                        <Text>Location to go: Stockholm</Text>
+                        <Text>Seat Number: 2222</Text>
+                        <Text>More About Me</Text>
+                        <Line />
+                        <View style={styles.buttonViewContainer}>
+                            <TheButton title='Lets Travel Together' />
+                        </View>
                     </CardComponent>
                     <CardComponent>
                         <Text>Arlind</Text>
-                        <Image source={require('../../../assets/icon.png')} />
-                        <Button title='like' />
+                        <Line />
+                        <Text>Train Number: 1111</Text>
+                        <Text>Location to go: Stockholm</Text>
+                        <Text>Seat Number: 2222</Text>
+                        <Text>More About Me</Text>
+                        <Line />
+                        <View style={styles.buttonViewContainer}>
+                            <TheButton title='Lets Travel Together' />
+                        </View>
                     </CardComponent>
                     <CardComponent>
                         <Text>Arlind</Text>
-                        <Image source={require('../../../assets/icon.png')} />
-                        <Button title='like' />
-                    </CardComponent>
-                    <CardComponent>
-                        <Text>Arlind</Text>
-                        <Image source={require('../../../assets/icon.png')} />
-                        <Button title='like' />
+                        <Line />
+                        <Text>Train Number: 1111</Text>
+                        <Text>Location to go: Stockholm</Text>
+                        <Text>Seat Number: 2222</Text>
+                        <Text>More About Me</Text>
+                        <Line />
+                        <View style={styles.buttonViewContainer}>
+                            <TheButton title='Lets Travel Together' />
+                        </View>
                     </CardComponent>
                 </View>   
                 </ScrollView>
@@ -46,6 +65,15 @@ const ProfileScreen = () => {
 }
 
 const styles = StyleSheet.create({
+    buttonViewContainer: {
+        flex: 1,
+        alignItems: 'center',
+        marginTop: 20,
+    },
+    theButton: {
+        backgroundColor: 'red',
+        
+    },
     container: {
         flex: 1,
         backgroundColor: 'rgba(187, 134, 252, 0.38)',
