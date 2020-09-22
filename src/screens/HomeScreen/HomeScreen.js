@@ -20,7 +20,7 @@ const HomeScreen = ({navigation}) => {
                     />
     </View>*/}
                 <TheButton 
-                    title='Find your travel buddy bllla!'
+                    title='Find your travel buddy!'
                     onPress={() => {navigation.push('Profile')}} />
         </ImageBackground>
     )
