@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, ScrollView,Image, Button,StyleSheet, FlatList  } from 'react-native'
+import { Text, View, ScrollView,StyleSheet, } from 'react-native'
 
 import CardComponent from '../../components/CardComponent'
 import Footer from '../../components/Footer'
@@ -21,7 +21,7 @@ const ProfileScreen = () => {
                 <View style={styles.cardContainer}>
                     <View style={styles.viewCards}>
                         <CardComponent>
-                            <View >
+                            <View style={styles.containerText}>
                                 <Text style={styles.text}>Arlind</Text>
                             </View>
                             <Line />
@@ -41,10 +41,12 @@ const ProfileScreen = () => {
                         <CardComponent>
                             <Text style={styles.text}>Arlind</Text>
                             <Line />
-                            <Text style={styles.text}>Train Number: 1111</Text>
-                            <Text style={styles.text}>Location to go: Stockholm</Text>
-                            <Text style={styles.text}>Seat Number: 2222</Text>
-                            <Text style={styles.text}> More About Me</Text>
+                            <View style={styles.containerText}>
+                                <Text style={styles.text}>Train Number: 1111</Text>
+                                <Text style={styles.text}>Location to go: Stockholm</Text>
+                                <Text style={styles.text}>Seat Number: 2222</Text>
+                                <Text style={styles.text}> More About Me</Text>
+                            </View>
                             <Line />
                             <View style={styles.buttonViewContainer}>
                                 <TheButton title='Lets Travel Together' />
@@ -55,10 +57,12 @@ const ProfileScreen = () => {
                         <CardComponent>
                             <Text style={styles.text}>Arlind</Text>
                             <Line />
-                            <Text style={styles.text}>Train Number: 1111</Text>
-                            <Text style={styles.text}>Location to go: Stockholm</Text>
-                            <Text style={styles.text}>Seat Number: 2222</Text>
-                            <Text style={styles.text}>More About Me</Text>
+                            <View style={styles.containerText}>
+                                <Text style={styles.text}>Train Number: 1111</Text>
+                                <Text style={styles.text}>Location to go: Stockholm</Text>
+                                <Text style={styles.text}>Seat Number: 2222</Text>
+                                <Text style={styles.text}>More About Me</Text>
+                            </View>
                             <Line />
                             <View style={styles.buttonViewContainer}>
                                 <TheButton title='Lets Travel Together' />

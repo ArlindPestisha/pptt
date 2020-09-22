@@ -1,5 +1,6 @@
 import React from 'react'
-import { View, Text, TextInput, ImageBackground,Button } from 'react-native'
+import { ImageBackground,} from 'react-native'
+import TheButton from '../../components/TheButton'
 import styles from './styles'
 
 
@@ -18,12 +19,9 @@ const HomeScreen = ({navigation}) => {
                         placeholder="To:"
                     />
     </View>*/}
-                <Button
-                    title="Serach"
-                    color="red"
-                    onPress={() => {navigation.push('Profile')}}
-                />
-            
+                <TheButton 
+                    title='Find your travel buddy!'
+                    onPress={() => {navigation.push('Profile')}} />
         </ImageBackground>
     )
 }
