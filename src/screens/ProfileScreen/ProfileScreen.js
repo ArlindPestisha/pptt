@@ -19,42 +19,52 @@ const ProfileScreen = () => {
                 <ScrollView>
 
                 <View style={styles.cardContainer}>
-                    <CardComponent>
-                        <Text>Arlind</Text>
-                        <Line />
-                        <Text>Train Number: 1111</Text>
-                        <Text>Location to go: Stockholm</Text>
-                        <Text>Seat Number: 2222</Text>
-                        <Text>More About Me</Text>
-                        <Line />
-                        <View style={styles.buttonViewContainer}>
-                            <TheButton title='Lets Travel Together' />
-                        </View>
-                    </CardComponent>
-                    <CardComponent>
-                        <Text>Arlind</Text>
-                        <Line />
-                        <Text>Train Number: 1111</Text>
-                        <Text>Location to go: Stockholm</Text>
-                        <Text>Seat Number: 2222</Text>
-                        <Text>More About Me</Text>
-                        <Line />
-                        <View style={styles.buttonViewContainer}>
-                            <TheButton title='Lets Travel Together' />
-                        </View>
-                    </CardComponent>
-                    <CardComponent>
-                        <Text>Arlind</Text>
-                        <Line />
-                        <Text>Train Number: 1111</Text>
-                        <Text>Location to go: Stockholm</Text>
-                        <Text>Seat Number: 2222</Text>
-                        <Text>More About Me</Text>
-                        <Line />
-                        <View style={styles.buttonViewContainer}>
-                            <TheButton title='Lets Travel Together' />
-                        </View>
-                    </CardComponent>
+                    <View style={styles.viewCards}>
+                        <CardComponent>
+                            <View >
+                                <Text style={styles.text}>Arlind</Text>
+                            </View>
+                            <Line />
+                            <View style={styles.containerText}>
+                                <Text style={styles.text}>Train Number: 1111</Text>
+                                <Text style={styles.text}>Location to go: Stockholm</Text>
+                                <Text style={styles.text}>Seat Number: 2222</Text>
+                                <Text style={styles.text}>More About Me</Text>
+                            </View>
+                            <Line />
+                            <View style={styles.buttonViewContainer}>
+                                <TheButton title='Lets Travel Together' />
+                            </View>
+                        </CardComponent>
+                    </View>
+                    <View style={styles.viewCards}>
+                        <CardComponent>
+                            <Text style={styles.text}>Arlind</Text>
+                            <Line />
+                            <Text style={styles.text}>Train Number: 1111</Text>
+                            <Text style={styles.text}>Location to go: Stockholm</Text>
+                            <Text style={styles.text}>Seat Number: 2222</Text>
+                            <Text style={styles.text}> More About Me</Text>
+                            <Line />
+                            <View style={styles.buttonViewContainer}>
+                                <TheButton title='Lets Travel Together' />
+                            </View>
+                        </CardComponent>
+                    </View>
+                    <View style={styles.viewCards}>
+                        <CardComponent>
+                            <Text style={styles.text}>Arlind</Text>
+                            <Line />
+                            <Text style={styles.text}>Train Number: 1111</Text>
+                            <Text style={styles.text}>Location to go: Stockholm</Text>
+                            <Text style={styles.text}>Seat Number: 2222</Text>
+                            <Text style={styles.text}>More About Me</Text>
+                            <Line />
+                            <View style={styles.buttonViewContainer}>
+                                <TheButton title='Lets Travel Together' />
+                            </View>
+                        </CardComponent>
+                    </View>
                 </View>   
                 </ScrollView>
                 <Footer />
@@ -71,7 +81,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
     },
     theButton: {
-        backgroundColor: 'red',
+        backgroundColor: '#884fc9',
         
     },
     container: {
@@ -85,6 +95,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         marginTop: 10
+        
+    },
+    viewCards: {
+        padding:15
+    },
+    text: {
+        color: '#a64fc9',
+        fontWeight: 'bold'
+    },
+    containerText: {
+        flex: 1,
+        justifyContent: 'flex-start',
         
     }
 })

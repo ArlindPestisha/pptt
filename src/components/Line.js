@@ -5,10 +5,9 @@ export default function Line() {
     return (
         <View style={{
             height: 2,
-            backgroundColor: 'rgba(255, 255, 255 ,0.3)',
+            backgroundColor: '#b7c4b1',
             alignSelf: 'stretch',
-            marginBottom: 5,
-            marginTop: 5
+            margin: 15,
         }} />
     )
 }
